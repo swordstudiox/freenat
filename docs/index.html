@@ -25,16 +25,17 @@
              
 				<!-- Header -->
 					<header id="header" class="alt">
-                      <div id="tp-weather-widget"></div>
+                      
 						<h1>免费FRP内网穿透服务</h1>
 						<p>本站的frp内网穿透服务基于开源项目FRP实现，完全免费提供给大家使用。</br>
+						<div id="tp-weather-widget"></div>
 						</p>
 					</header>
 
   
-                  <p style="text-align:left;margin-left:60px">公告：</br>
+                 <!--  <p style="text-align:left;margin-left:60px">公告：</br>
                      <font color="red">frp服务器请填对应的freenat域名（不要填ip），这样即使服务器出问题我可以直接改解析到可用服务器上，保证服务可用</font>
-                   </p> 
+                   </p>  -->
 
 				<!-- Nav -->
 					<nav id="nav">
@@ -42,7 +43,7 @@
 							<li><a href="#intro" class="active">首页</a></li>
 							<li><a href="#first">免费服务器</a></li>
 							<li><a href="#second">注意事项</a></li>
-							<li><a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=我也不知道等于啥" target="_blank">与我联系</a></li>
+							<li><a href="https://github.com/swordstudiox/freenat/issues/new" target="_blank">与我联系</a></li>
               
                 
 						</ul>
@@ -108,17 +109,19 @@
 									
 									<li>
 									
-									<h3>二、美国frp线路2：0.16.1版本（兼容0.10.0-0.16.1版本）</h3>
+									<h3>一、美国frp线路2：0.16.1版本</br>
+									（兼容0.10.0-0.16.1版本）</h3>
                                       
                                       <p style="font-size:15px;text-align:left;margin-left:20px">
-									     连接地址为：<a href="http://freenat.bid" target="_blank">freenat.bid:7000</a></br>
-                                         特权认证密码为：frp888</br>
+									     连接地址（server_addr）为：<a href="http://freenat.bid" target="_blank">freenat.bid</a></br>
+										 通讯端口（server_port）为：7000</br>
+                                         特权认证密码(privilege_token)为：frp888</br>
                                          状态查询：<a href="http://freenat.bid:7500" target="_blank">http://freenat.bid:7500</a></br>
                                          查询帐号和密码均为：admin</br>
                                          默认http端口为80</br>
                                          默认https端口为443</br>
                                          端口全部开放</br>
-                                         提供二级域名*.freenat.bid(*自定义)</br>
+                                         提供域名（custom_domains）：*.freenat.bid(*自定义)</br>
                                          支持KCP协议</br>
                                          支持P2P穿透（xtcp）</br>
                                          本服务器长期服务
@@ -133,17 +136,19 @@
 									
 									
 									<li>
-									<h3>三、美国frp线路3：0.25.2版本（兼容0.18.0-0.25.2版本）</h3>
+									<h3>二、美国frp线路3：0.25.3版本</br>
+									    （兼容0.18.0-0.25.3版本）</h3>
                                       
                                       <p style="font-size:15px;text-align:left;margin-left:20px">
-									     连接地址为：<a href="http://freenat.club" target="_blank">freenat.club:7000</a></br>
-                                         特权认证密码为：frp888</br>
+									     连接地址（server_addr）为：<a href="http://freenat.club" target="_blank">freenat.club</a></br>
+										 通讯端口（server_port）为：7000</br>
+                                         特权认证密码(token)为：frp888</br>
                                          状态查询：<a href="http://freenat.club:7500" target="_blank">http://freenat.club:7500</a></br>
                                          查询帐号和密码均为：admin</br>
                                          默认http端口为80</br>
                                          默认https端口为443</br>
                                          端口全部开放</br>
-                                         提供二级域名*.freenat.club(*自定义)</br>
+                                         提供域名（custom_domains）：*.freenat.club(*自定义)</br>
                                          支持KCP协议</br>
                                          支持P2P穿透（0.25.1版本以上xtcp）</br>
                                          本服务端版本跟随作者更新
@@ -207,7 +212,8 @@
 					<footer id="footer">
 						<p class="copyright">&nbsp; &nbsp;
 						Untitled. Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a> &nbsp;| &nbsp;
-                                                       <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=什么鬼" target="_blank">Email To Me</a> &nbsp;|&nbsp;本站FRP服务已艰难运行<span id="htmer_time"></span> 
+                                                       <a href="https://github.com/swordstudiox/freenat/issues/new" target="_blank">
+Contact Me</a> &nbsp;|&nbsp;本站FRP服务已艰难运行<span id="htmer_time"></span> 
                                                        &nbsp;| &nbsp; &nbsp;&nbsp;&nbsp;
                                                       <a href="https://www.upyun.com" target="_blank"><img src="https://www.ituku.me/images/ugE5.png"></a>
 
@@ -225,18 +231,6 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
   
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?b93252be6f9c0de1dbe81afc013ab280";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
-
-
 <script>
     function secondToDate(second) {
         if (!second) {
@@ -285,21 +279,6 @@ var _hmt = _hmt || [];
     setInterval(setTime, 1000);
 </script>
    
-
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
 
 <script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script>
 <script>tpwidget("init", {
