@@ -1,0 +1,4 @@
+ps aux | grep /root/frps.ini | grep -v grep >/dev/null
+if [ $? -ne 0 ];then
+/root/frps -c /root/frps.ini &
+fi

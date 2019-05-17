@@ -1,0 +1,4 @@
+killall -9 frps
+sleep 300
+/root/frps -c /root/frps.ini &
+
