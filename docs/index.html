@@ -24,7 +24,21 @@ overflow-y: auto;
 _overflow: auto;
 margin: 0 0 1em;
 }
- 
+
+//添加IOS下滚动条
+.table-container::-webkit-scrollbar
+{
+-webkit-appearance: none;
+width: 14px;
+height: 14px;
+}
+
+.table-container::-webkit-scrollbar-thumb
+{
+border-radius: 8px;
+border: 3px solid #fff;
+background-color: rgba(0, 0, 0, .3);
+}
 </style>
 
 		
@@ -210,10 +224,11 @@ margin: 0 0 1em;
 								<header class="major">
 									<h2>可搭建frps服务端的便宜VPS服务器</h2>
 								</header>
-								<ul class="features"> 
+								
 <div class="table-container">								                                    							
-<table style="font-size:16px">
+<table style="font-size:15px" align="center">
 <tbody>
+
 <tr>
 <td style="text-align: center;"><span style="color: #ff0000;"><strong>服务商</strong></span></td>
 <td style="text-align: center;"><span style="color: #ff0000;"><strong>位置</strong></span></td>
@@ -228,6 +243,8 @@ margin: 0 0 1em;
 <td style="text-align: center;"><span style="color: #ff0000;"><strong>备注</strong></span></td>
 
 </tr>
+
+
 <tr>
 <td style="text-align: center;"><strong>Virmach</strong></td>
 <td style="text-align: center;"><strong>洛杉矶</strong></td>
@@ -309,7 +326,7 @@ margin: 0 0 1em;
 <td style="text-align: center;"><strong><a href="https://www.changeip.com/accounts/aff.php?aff=3013&pid=67" target="_blank" >点击直达</a></strong></td>
 <td style="text-align: center;"><strong>鲨鱼机房</strong></td>
 </tr>
-
+</tbody>
 
 </table>
 </div>
@@ -324,7 +341,7 @@ Virmach一次性优惠9折优惠码：SAVE10 </br>
 
 																	
 									
-								</ul>
+							
                                 </section>
 
 
